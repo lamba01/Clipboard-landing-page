@@ -1,0 +1,179 @@
+*
+.first {
+    text-align: center;
+    height: 500px;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+#logo {
+    margin: 4em 2em 0em 0em;
+}
+.Ios {
+    margin: 1em;
+    padding: 15px 45px;
+    background-color:  hsl(170, 78%, 55%);
+    border-radius: 50px;
+}
+.Ios:hover {
+    background-color: hsl(170, 63%, 26%);;
+}
+.Mac {
+    padding: 15px 45px;
+    border-radius: 50px;
+    background-color:   hsl(229, 44%, 26%);
+}
+.Mac:hover {
+    background-color: hsl(228, 45%, 44%);
+}
+.ss {
+    text-align: center;
+    margin-bottom: 5em;
+}
+.flex1 {
+    display: flex;
+}
+.flex1texts {
+    display: block;
+    margin-left: 5em;
+    width: 20em;
+    margin-top: 5em;
+}
+.flex1image {
+    max-width: 100%;
+    width: 45em;
+    height: auto;
+}
+.third {
+    text-align: center;
+    margin-top: 5em;
+}
+.thirdtext {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.devicesimg {
+    max-width: 100%;
+    height: auto;
+}
+.fourth {
+    text-align: center;
+}
+.icons {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+.icon1, .icon2, .icon3 {
+    width: 20em;
+}
+.logos {
+    margin: 11em 0em;
+    display: flex;
+    justify-content: space-around;
+}
+#logoss {
+    width: 100px;
+    height: auto;
+}
+.last {
+    text-align: center;
+}
+#p {
+    white-space: pre-line;
+}
+footer {
+    height: 120px;
+    background-color: rgb(233, 224, 224);
+}
+#footerlogo {
+    width: 50px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(8, 221, 221);
+}
+.footerdiv {
+    display: grid;
+    grid-template-columns: 100px 100px auto;
+    grid-template-rows: 35px 35px auto;
+    align-content: center;
+    justify-content: space-between;
+}
+#f {
+    display: flex;
+    padding-top: 2em;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #logoss {
+        width: 200px;
+        height: auto;
+        padding: 2em 0em;
+    }
+    #p {
+        white-space: unset;
+    }
+    .flex1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex1texts {
+        text-align: center;
+        margin-top: 5em;
+        margin-right: 5em;
+        padding-left: 1em;
+        width: 19.375em;
+    }
+    .fourth{
+        margin-top: 5em;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon1 {
+        width: 13em;
+        margin: 0em 1em 0em 0em;
+    }
+    .icon2, .icon3 {
+        width: 13em;
+        margin: 1em 0em;
+    }
+    .logos {
+        margin: 2em 0em;
+    }
+    #f {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerdiv {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        text-align: center;
+        height: fit-content;
+        margin-top: 1em;
+    }
+    #footerlogo {
+        display: block;
+        margin: auto;
+    }
+}
